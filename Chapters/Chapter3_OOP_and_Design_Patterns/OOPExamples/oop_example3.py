@@ -30,3 +30,5 @@ print(product2.quantity, "++++")
 product2.sell_product(quantity_to_sell=3)
 product2.sell_product(quantity_to_sell=2)
 print(product2.quantity, "-----")
+
+# https://github.com/ecedreamer/SoftwareDesign
