@@ -1,4 +1,4 @@
-
+# object, instance, entity = object
 
 class Product:
     # initializer method, its called when the object is created
@@ -9,7 +9,7 @@ class Product:
         self.discount = discount
         self.quantity = quantity
 
-    def get_discounted_price(self):
+    def get_discounted_price(self):  # instance method that takes self as a first argument
         discount_amount = self.discount * self.price / 100
         return self.price - discount_amount
     
@@ -32,3 +32,6 @@ product2.sell_product(quantity_to_sell=2)
 print(product2.quantity, "-----")
 
 # https://github.com/ecedreamer/SoftwareDesign
+
+
+product1.sell_product(quantity_to_sell=5)

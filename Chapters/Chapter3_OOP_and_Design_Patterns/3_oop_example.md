@@ -7,6 +7,9 @@
 - All instance methods of a class take "self" as a first argument. The "self" is the object that is calling that method at the point of time. 
 - Instead of "self", you can write anything, but writing "self" is a general trend. 
 - You have to use dot operator "." to access the attributes or methods of the object.  eg. object.name or object.get_name()
+- Attributes or methods of a class can only be accessed by objects of that class since they are encapsulated by a class definition. 
+- Class attributes may be public, private and protected types which may be different for different Programming Languages. 
+
 
 ```python
 
