@@ -20,11 +20,11 @@ class Car:  # parent class
 
 class ElectricCar(Car):
     def __init__(self, brand, model, color, milage, charg_time):
-        self.car_brand = brand
-        self.car_model = model
-        self.color = color
-        self.milage = milage
+        super().__init__(brand, model, color, milage)
         self.charging_time = charg_time
+
+    def get_electric_car_intro(self):
+        return self.car_brand + " Charge Time: " + str(self.charging_time)
 
 
 def main():
@@ -33,7 +33,7 @@ def main():
     print(car_intro)
 
     mycar2 = ElectricCar("MG", "Model 4", "Blue", 150, 5)
-    mycar_intro = mycar2.get_car_intro()
+    mycar_intro = mycar2.get_electric_car_intro()
     print(mycar_intro)
 
 main()
