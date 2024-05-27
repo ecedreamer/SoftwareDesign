@@ -4,8 +4,8 @@ Inheritance: process of deriving attributes and behaviors of parent class to chi
 - Child Class | Derived Class | Sub class
 
 
-IS A RULE is inheritance
-HAS A RULE is not inheritance, it is Composition(Association)
+IS-A-RULE is inheritance
+HAS-A-RULE is not inheritance, it is Composition(Association)
 """
 
 class Car:  # parent class
@@ -19,7 +19,7 @@ class Car:  # parent class
         return self.car_brand + " " + self.car_model
 
 class ElectricCar(Car):
-    def __init__(self, brand, model, color, milage, charg_time):
+    def __init__(self, brand, model, color, milage, charg_time): # it overrides parent class __init__
         super().__init__(brand, model, color, milage)
         self.charging_time = charg_time
 
