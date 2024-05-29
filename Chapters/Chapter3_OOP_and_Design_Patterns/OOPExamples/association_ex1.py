@@ -32,7 +32,7 @@ class Laptop:
 def main():
     student1 = Student("Prabin Babu Kattel", 1003, "babu@gmail.com", "AI", 36)
     student2 = Student("Rohit Shah", 1006, "rohit@gmail.com", "AI", 36)
-    laptop1 = Laptop("Lenovo", "Legion 5", student2)
+    laptop1 = Laptop("Lenovo", "Legion 5", owner=student2)
     laptop2 = Laptop("Asus", "G16", student1)
     laptop3 = Laptop("Asus", "Purano", student2)
 
@@ -43,9 +43,20 @@ def main():
     print(laptop_info)
     print(laptop1.get_owner_info())
 
+    laptop_info = laptop2.get_laptop_info()
+    print(laptop_info)
+    print(laptop2.get_owner_info())
+    
+
 
 main()
 
+""" OUTPUT
+Lenovo-Legion 5
+AI-36; Rohit Shah_1006
+Asus-G16
+AI-36; Prabin Babu Kattel_1003
+"""
 
 
 
