@@ -16,5 +16,10 @@ Design patterns are reusable solutions to common problems encountered in softwar
 - **Observer Pattern**: Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 - **Strategy Pattern**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 - **Command Pattern**: Encapsulates a request as an object, thereby allowing parameterization of clients with queues, requests, and operations.
+- **State Pattern**: The State design pattern allows an object to alter its behavior when its internal state changes, making it appear as if the object changes its class. 
 - **Iterator Pattern**: Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 - **Chain of Responsibility Pattern**: Allows a set of classes to handle a request one by one in a chain until the request is handled.
+
+
+## References:
+- Read this mendatorily: https://refactoring.guru/design-patterns
