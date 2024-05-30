@@ -48,3 +48,6 @@ Following are some important tips that are to be kept in mind while drawing a us
 - A use case diagram should represent the most significant interaction among the multiple interactions.
 - At least one module of a system should be represented by the use case diagram.
 - If the use case diagram is large and more complex, then it should be drawn more generalized.
+
+## References:
+- In Lucid Chart:  https://www.youtube.com/watch?v=4emxjxonNRI&ab_channel=LucidSoftware
