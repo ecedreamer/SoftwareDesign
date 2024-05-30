@@ -1,3 +1,5 @@
+
+## Relational Database Management System
 1. **Database**: A collection of related data stored in a structured format, typically organized into tables, indexes, views, and other objects.
 
 2. **Table**: A structured set of data elements (rows and columns) organized in a grid format. Each column represents a specific attribute, while each row represents a unique record or entry.
