@@ -1,9 +1,18 @@
+## Test Driven Development
+- Test-Driven Development (TDD) is a software development approach where tests are written before the actual code implementation. 
+- The process typically involves three steps: 
+  - writing a failing test **(Red)**, 
+  - writing the minimum code required to pass the test **(Green)**,
+  - refactoring the code while ensuring all tests still pass. 
+- TDD aims to improve code quality & maintainability, ensures code meets requirements, catch erros/bugs early, provides a safety net for refactoring. 
+
+
+
 ## Unit Testing
 
 - Unit testing is a software testing technique used to validate the individual units or components of a software application in isolation. 
 
 - A unit is the smallest testable part of a software system, typically a function, method, or class. The primary goal of unit testing is to verify that each unit of the software performs as expected, according to its specifications.
-
 
 - Unit testing is a fundamental practice in modern software development methodologies such as Test-Driven Development (TDD) and Behavior-Driven Development (BDD). 
 
