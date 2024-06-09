@@ -40,3 +40,21 @@ Select all the apply.
     - b.	A relationship between an attribute and a table in a database.
     - c.	A relationship between two attributes in a table.
     - d.	A relationship between three entities or tables in a database
+
+8. SQL stands for
+    - a. Statement Qestion Language
+    - b. Structured Query Language
+    - c. Structured Question Language
+    - 3. None of the above
+
+9. Which of the following is not a relational DBMS, 
+    - a. MySQL
+    - b. PostgreSQL
+    - c. Sqlite
+    - d. MongoDB
+
+10. Which of the following statement is not true for ForeignKey
+    - a. A ForeignKey can be a combination of attributes (composite key).
+    - b. A ForeignKey must reference a primary key in another table.
+    - c. ForeignKeys enforce data integrity by ensuring referenced values exist.
+    - d. A ForeignKey can be the primary key of its own table.
