@@ -39,7 +39,10 @@ A relational database is a type of database that stores and organizes data in a 
 3. **Column or Attribute**: A vertical arrangement of data in a table, representing a specific attribute or field. Columns have a data type that defines the kind of data they can store (e.g., integer, string, date).
 
 4. **Row or Tuple**: A horizontal arrangement of data in a table, representing a single record or entry containing values corresponding to each column.
+   
 5. **Relationship:** The magic of relational databases lies in how these tables relate to each other.  Tables can be linked together using keys (special columns). This allows you to efficiently retrieve and manage data across different entities.
+   
 6. **Structured Query Language (SQL):**  Relational databases are queried using SQL, a standardized language specifically designed to interact with relational databases. SQL allows you to insert, update, delete, and retrieve data from the database.
+   
 7. **Keys:**  Keys are crucial for establishing relationships between tables. There are different types of keys eg, candidate key, super key, primary key, composite key, foreign key, alternate key etc. 
 

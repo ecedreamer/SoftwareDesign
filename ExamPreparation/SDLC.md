@@ -87,3 +87,9 @@
     - b. Increased development speed
     - c. Enhanced learning and knowledge sharing
     - d. Reduced need for testing
+  
+16. What is the purpose of the Red-Green-Refactor cycle in TDD?
+    - a. To catch errors early in development
+    - b. To ensure that code is properly tested
+    - c. To reduce the amount of code written
+    - d. All of the above 

@@ -57,6 +57,7 @@ In the `employees` table, examples of super keys are:
 
 ### 4. Composite Key
 - A composite key is a candidate key that consists of two or more attributes. These attributes together uniquely identify a row in the table.
+- It can also be used to establish the Many to Many relationship through a junction table.
 
 **Example (Hypothetical):**
 In the Student table, `roll_no` and `batch` uniquely identify a row in a table. 
@@ -72,3 +73,6 @@ In the Student table, `roll_no` and `batch` uniquely identify a row in a table.
 
 ### 6. Alternate Key: 
 An alternate key is any other candidate key that wasn't chosen as the primary key. It can also uniquely identify rows in the table, but there can only be one primary key, while there can be multiple alternate keys.
+
+**Example:**
+- In the Customer table, `customer_id` is the primary key whereas the `email` is the alternate key. 

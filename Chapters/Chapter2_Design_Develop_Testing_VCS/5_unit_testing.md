@@ -4,6 +4,7 @@
   - writing a failing test **(Red)**, 
   - writing the minimum code required to pass the test **(Green)**,
   - refactoring the code while ensuring all tests still pass. 
+- These three steps are called **Red-Green-Refactor cycle**. 
 - TDD aims to improve code quality & maintainability, ensures code meets requirements, catch erros/bugs early, provides a safety net for refactoring. 
 
 
