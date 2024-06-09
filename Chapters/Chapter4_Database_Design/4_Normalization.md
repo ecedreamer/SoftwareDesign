@@ -10,7 +10,9 @@ Database normalization is a process of organizing data in a relational database 
 
 ## Dependencies
 ### Functional Dependency
-A functional dependency (FD) is a constraint that exists between two sets of attributes in a table. It states that whenever the value in one set of attributes (determinant) uniquely determines the value in another set of attributes (dependent). We can represent an FD as X -> Y, where X is the determinant and Y is the dependent.
+Given a relation (table) R, an attribute A (or a set of attributes) is said to functionally determine another attribute B if, for every pair of tuples (rows) in R, whenever the values of A are the same, the values of B are also the same. This is denoted as A→B.
+
+In other words, if two rows of a table have the same value for attribute A, then they must have the same value for attribute B.
 
 **Example:** In a Customers table with attributes customer_id, customer_name, and city, the FD customer_id -> customer_name holds true. This means that knowing the customer_id uniquely determines the customer_name.
 
