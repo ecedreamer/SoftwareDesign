@@ -21,10 +21,10 @@ Consider three tables
 #### Student Table
 |student_id | roll_no | name           | email                    | batch |
 |-----------|---------|----------------|--------------------------|-------|
-|          1| 1       | Alice Johnson  | alice.johnson@example.com| 2023  |
-|          2| 2       | Bob Smith      | bob.smith@example.com    | 2023  |
-|          3| 1       | Carol Danvers  | carol.danvers@example.com| 2024  |
-|          4| 2       | David Brown    | david.brown@example.com  | 2024  |
+|          1| 1       | Alice Johnson  | alice.johnson@example.com| 2023-ai  |
+|          2| 2       | Bob Smith      | bob.smith@example.com    | 2023-ai  |
+|          3| 1       | Carol Danvers  | carol.danvers@example.com| 2024-ai  |
+|          4| 2       | David Brown    | david.brown@example.com  | 2024-ai  |
 
 
 ### 1. Candidate Key
