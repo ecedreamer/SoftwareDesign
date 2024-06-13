@@ -1,6 +1,12 @@
 ## Design Patterns
 Design patterns are reusable solutions to common problems encountered in software design. They provide a structured approach to solving design problems and promote code reuse, maintainability, and scalability. 
 
+## Gang of Four (GoF) Design Patterns
+- The Gang of Four (GoF) is a group of four authors who wrote the influential book "Design Patterns: Elements of Reusable Object-Oriented Software." 
+- Four authors are Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+- This book, published in 1994, cataloged 23 design patterns into three categories: Creational, Structural, and Behavioral. 
+- These patterns were derived from their experience with designing software systems and captured common solutions to recurring design problems.
+
 ### Creational Patterns:
 - **Singleton Pattern**: Ensures that a class has only one instance and provides a global point of access to that instance.
 - **Factory Method Pattern**: Defines an interface for creating an object, but allows subclasses to alter the type of objects that will be created.
