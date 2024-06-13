@@ -2,10 +2,21 @@
 Structured Query Language (SQL) is a standardized language designed for managing data stored in relational databases. These databases organize information in tables with rows and columns, allowing for connections between different data points.
 It can be used across different DBMSs such as SQLITE, MySQL, PostgreSQL, SQL Server, and Oracle etc. 
 
+### Download & Install Database Server
+- MySQL Server (https://www.mysql.com/)
+- PostgreSQL Server (https://www.postgresql.org/)
+References: 
+- MySQL & MySQL workbench, https://www.youtube.com/watch?v=BxdSUGBs0gM&ab_channel=GeekyScript
+- DBeaver, https://www.youtube.com/watch?v=Cc0MMFdmim0&list=PLkh7-EMxQiV2DAiruEWgh-i4jreuyX1rP&ab_channel=DBeaver
+### For practicing SQL in the real databae, use either of the following tools
+- MySQL workbench (https://www.mysql.com/products/workbench/)
+- PG admin (https://www.pgadmin.org/)
+- https://www.apachefriends.org/
+- DBeaver (https://dbeaver.io/)
 
 ## General Database Command using SQL
 
-### 1. Create a new database
+### Create a new database
 if you are using SQLite database, create a database manually using sqlite cli or DBeaver or other tools.
 ```sql
 -- creating a new database
@@ -17,7 +28,7 @@ DROP DATABASE mydatabase;
 
 ```
 
-### 2. Creating Tables
+### Creating Tables
 
 Syntax: 
 ```sql
@@ -34,7 +45,7 @@ For SQLite database
 ```sql
 CREATE TABLE batch (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    batch_name TEXT NOT NULL
+    batch_name TEXT NOT NULL,
     start_date TEXT,
     end_date TEXT
 );
@@ -69,10 +80,10 @@ CREATE TABLE student (
 );
 ```
 
-### 3. Inserting Data
+### Inserting Data
 **Syntax:**
 ```sql
-INSERT INTO table(col1, col2, col3) 
+INSERT INTO table_name(col1, col2, col3) 
     VALUES ("col1 value1", "col2 value1", "col3 value1"),
            ("col1 value2", "col2 value2", "col3 value2");
 ```
@@ -101,7 +112,7 @@ VALUES ('Dipak Niroula', 'dipak@example.com', 'Satdobato', 1),
        ('Rupak Kafle', 'rupak@example.com', 'Bhaktapur', 2);
 ```
 
-### 4. Retrieving Data from table
+### Retrieving Data from table
 **Syntax:**
 ```sql
 SELECT columns from table_name;
@@ -119,4 +130,35 @@ SELECT * FROM student WHERE name="Student 4";
 
 SELECT * FROM student WHERE name LIKE "%pak%";
 
+```
+
+
+### Updating Data in the table
+**Syntax:**
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+```
+- If condition matches many rows, all will be affected. 
+- If condition is not specified, all rows will be affected. 
+
+**Example:**
+```sql
+UPDATE student
+SET name = "Dipendra", email = "dipendra@gmail.com"
+WHERE id=2;
+```
+
+### Deleting data from the database
+
+**Syntax:**
+```sql
+DELETE FROM table_name WHERE condition;
+```
+
+**Examples:**
+```sql
+DELETE FROM student
+WHERE id=3;
 ```

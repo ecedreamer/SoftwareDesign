@@ -50,4 +50,5 @@ Following are some important tips that are to be kept in mind while drawing a us
 - If the use case diagram is large and more complex, then it should be drawn more generalized.
 
 ## References:
+- https://www.lucidchart.com/pages/uml-use-case-diagram
 - In Lucid Chart:  https://www.youtube.com/watch?v=4emxjxonNRI&ab_channel=LucidSoftware
