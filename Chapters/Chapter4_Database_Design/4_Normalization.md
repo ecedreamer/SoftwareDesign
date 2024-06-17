@@ -44,7 +44,8 @@ A transitive dependency (TD) is an indirect dependency between attributes. It oc
 Ensures all data items within a column are atomic (single value) and there are no repeating groups within a table.
 
 ### Second Normal Form (2NF):
-Complies with 1NF and eliminates partial dependencies. A partial dependency occurs when a non-key attribute depends on only a part of the primary key.
+Complies with 1NF and eliminates partial dependencies. This occurs in a table where there is a primary key composed of more than one key. 
+A partial dependency occurs when a non-key attribute depends on only a part of the primary key.
 
 ### Third Normal Form (3NF)
 Adheres to 2NF and removes transitive dependencies. This occurs when one non-key attribute depends on another non-key attribute, which in turn depends on the primary key.
