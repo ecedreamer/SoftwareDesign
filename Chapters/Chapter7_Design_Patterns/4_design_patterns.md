@@ -1,4 +1,9 @@
+# READ THIS MENDATORY 
+Click this link: https://refactoring.guru/design-patterns
+
 ## Design Patterns
+
+
 Design patterns are reusable solutions to common problems encountered in software design. They provide a structured approach to solving design problems and promote code reuse, maintainability, and scalability. 
 
 ## Gang of Four (GoF) Design Patterns
@@ -27,5 +32,5 @@ Design patterns are reusable solutions to common problems encountered in softwar
 - **Chain of Responsibility Pattern**: Allows a set of classes to handle a request one by one in a chain until the request is handled.
 
 
-## References:
+## References: 
 - Read this mendatorily: https://refactoring.guru/design-patterns
