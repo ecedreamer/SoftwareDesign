@@ -18,7 +18,7 @@ StudentID | Name     | Courses
 
 ## Example Table NOT in 2NF 
 
-### Example 1
+### Example 1 OrderDetails Table
 note: here, there are two primary keys OrderID and ProductID
 
 | OrderID | ProductID | OrderDate   | ProductName   | Price  |
@@ -30,7 +30,7 @@ note: here, there are two primary keys OrderID and ProductID
 | 2       | 102       | 2024-06-02  | Gadget B      | 7000   |
 | 3       | 101       | 2024-06-03  | Widget A      | 5000   |
 
-### Example 2
+### Example 2 StudentEnrollment Table
 note: here, there are two primary keys StudentID and CourseID
 
 | StudentID | CourseID | StudentName | CourseName | Instructor  |
@@ -42,6 +42,7 @@ note: here, there are two primary keys StudentID and CourseID
 | 103       | CS101    | Carol       | CompSci    | Prof. Smith |
 | 104       | MATH101  | Dave        | Math       | Prof. Jones |
 | 105       | CHEM101  | Eve         | Chemistry  | Prof. Green |
+
 
 ## Example Table Not in 3 NF
 
@@ -68,6 +69,29 @@ MatchDetails Table
 | M05      | NP vs BHU  | MULPANI | 25000     |
 
 
+### Example 3 : Student Grades tables
 
-### Assignment: Normalize the table below in 1nf, 2nf and 3nf if necessary.
+| Student ID | Course ID | Student Name | Course Name  | Instructor ID | Grade |
+|------------|-----------|--------------|--------------|---------------|-------|
+| 1001       | C101      | Alice        | Math 101     | I01           | A     |
+| 1002       | C102      | Bob          | English 101  | I02           | B     |
+| 1003       | C101      | Charlie      | Math 101     | I01           | B+    |
+| 1004       | C103      | Diana        | Physics 101  | I03           | A-    |
+| 1005       | C102      | Evan         | English 101  | I02           | B     |
+
+### Example 4
+| OrderID | CustomerID | CustomerName | CustomerAddress | ProductID | ProductName | OrderDate | Quantity |
+|---------|------------|--------------|-----------------|-----------|-------------|-----------|----------|
+| 1       | 101        | John Doe     | 123 Elm St      | 501       | Widget A    | 2023-06-01| 2        |
+| 2       | 102        | Jane Smith   | 456 Oak St      | 502       | Gadget B    | 2023-06-02| 1        |
+| 3       | 101        | John Doe     | 123 Elm St      | 503       | Thingamajig | 2023-06-03| 5        |
+
+#### Issues with the Table (Why it's not in 3NF)
+
+1. **Repeating Groups and Redundancy**: The `CustomerName` and `CustomerAddress` are repeated for each order made by the same customer. Similarly, `ProductName` is repeated for each product.
+2. **Transitive Dependency**: `CustomerName` and `CustomerAddress` are dependent on `CustomerID`, which is not a candidate key for the table. This creates a transitive dependency through `OrderID`.
+
+
+
+## Assignment: Normalize the table below in 1nf, 2nf and 3nf if necessary.
 <img src="../../Images/database/normalization_ex1.png" width=700>

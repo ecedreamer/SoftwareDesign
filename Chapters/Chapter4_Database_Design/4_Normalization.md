@@ -27,7 +27,11 @@ A partial dependency (PD) is a special case of a functional dependency. It occur
 
 **Anomaly caused by Partial Dependency:**
 
-**Insert Anomaly:** If a PD exists, you might insert a record with a valid value for the partial key (e.g., class_id) but a missing value for the dependent attribute (major). This violates data integrity as a complete picture of a student might be missing essential information.
+**Update Anomaly:** If a partial dependency exists, updating a value might require changes in multiple rows. For instance, if Department Name was dependent on part of the primary key and the department name changes, all rows with that partial key would need to be updated.
+
+**Insert Anomaly:** Difficulty in adding new records when some attributes are not yet known. For example, if we need to insert a new department without any employees, we can’t do so without a corresponding employee entry.
+
+**Delete Anomaly:** Deleting a record might remove more information than intended. For example, deleting the last employee of a department could result in losing department information.
 
 
 ### Transitive Dependency
@@ -37,7 +41,11 @@ A transitive dependency (TD) is an indirect dependency between attributes. It oc
 
 **Anomaly caused by Transitive Dependency:**
 
-**Delete Anomaly:** If a TD exists, deleting a row based on the first determinant (e.g., course_id) might leave "orphaned" data in related tables. For instance, deleting a course might leave an instructor record without an associated course if the instructor information is only stored in the department table.
+**Update Anomaly:** If Manager Name depends on Department ID and Department ID depends on Employee ID, updating a manager’s name would require updating multiple records if that manager manages multiple departments.
+
+**Insert Anomaly:** Inability to add a new manager or department without a corresponding employee.
+
+**Delete Anomaly:** Deleting an employee could remove critical information about departments or managers if the dependencies are not properly separated.
 
 ## Normal Forms
 ### First Normal Form (1NF):
