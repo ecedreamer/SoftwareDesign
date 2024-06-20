@@ -95,3 +95,60 @@ MatchDetails Table
 
 ## Assignment: Normalize the table below in 1nf, 2nf and 3nf if necessary.
 <img src="../../Images/database/normalization_ex1.png" width=700>
+
+
+----------------------------------------------------------------    
+##  A sample bill and normalized tables
+
+
+### Customer Information
+**Customer ID:** 501  
+**Order ID:** 101  
+**Order Date:** 2024-06-01
+
+### Products Ordered
+
+| ProductID | ProductName | Quantity | Price per Unit | Total Price |
+|-----------|-------------|----------|----------------|-------------|
+| 1         | Laptop      | 1        | $1000          | $1000       |
+| 3         | Headphones  | 2        | $200           | $400        |
+
+### Summary
+
+**Subtotal:** $1400  
+**Tax (10%):** $140  
+**Total Amount Due:** $1540
+
+---
+
+**Thank you for your purchase!**
+
+# Product Table
+| ProductID | ProductName       | Price |
+|-----------|-------------------|-------|
+| 1         | Laptop            | 1000  |
+| 2         | Smartphone        | 700   |
+| 3         | Headphones        | 200   |
+| 4         | Monitor           | 300   |
+| 5         | Keyboard          | 50    |
+
+# Order Table
+| OrderID | CustomerID | OrderDate   |
+|---------|------------|-------------|
+| 101     | 501        | 2024-06-01  |
+| 102     | 502        | 2024-06-03  |
+| 103     | 503        | 2024-06-05  |
+| 104     | 504        | 2024-06-07  |
+| 105     | 505        | 2024-06-10  |
+
+# OrderedProduct Table
+| OrderID | ProductID | Quantity |
+|---------|-----------|----------|
+| 101     | 1         | 1        |
+| 101     | 3         | 2        |
+| 102     | 2         | 1        |
+| 102     | 4         | 1        |
+| 103     | 1         | 1        |
+| 104     | 5         | 1        |
+| 105     | 2         | 2        |
+| 105     | 3         | 1        |
