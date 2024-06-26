@@ -25,9 +25,10 @@ note: here, there are two primary keys OrderID and ProductID
 |---------|-----------|-------------|---------------|--------|
 | 1       | 101       | 2024-06-01  | Widget A      | 5000   |
 | 1       | 102       | 2024-06-01  | Widget B      | 7000   |
+| 1       | 102       | 2024-06-01  | Widget B      | 7000   |
 | 2       | 103       | 2024-06-02  | Gadget X      | 3000   |
 | 2       | 104       | 2024-06-02  | Gadget Y      | 2000   |
-| 2       | 102       | 2024-06-02  | Gadget B      | 7000   |
+| 2       | 102       | 2024-06-02  | Widget B      | 7000   |
 | 3       | 101       | 2024-06-03  | Widget A      | 5000   |
 
 ### Example 2 StudentEnrollment Table
@@ -94,7 +95,12 @@ MatchDetails Table
 
 
 ## Assignment: Normalize the table below in 1nf, 2nf and 3nf if necessary.
-<img src="../../Images/database/normalization_ex1.png" width=700>
+
+| Order Number | Customer Name | Customer Address | Item   | Quantity | Price | Total |
+|--------------|---------------|------------------|--------|----------|-------|-------|
+| 101          | John Smith    | 123 Main St.     | Apple  | 2        | 1.00  | 2.00  |
+| 102          | John Smith    | 123 Main St.     | Orange | 3        | 0.75  | 2.25  |
+| 103          | Jane Doe      | 456 Oak Ave.     | Banana | 1        | 0.50  | 0.50  |
 
 
 ----------------------------------------------------------------    
@@ -123,6 +129,7 @@ MatchDetails Table
 
 **Thank you for your purchase!**
 
+### SOLUTION
 # Product Table
 | ProductID | ProductName       | Price |
 |-----------|-------------------|-------|
@@ -142,6 +149,8 @@ MatchDetails Table
 | 105     | 505        | 2024-06-10  |
 
 # OrderedProduct Table
+Combination of OrderID & ProductID makes a primary key 
+
 | OrderID | ProductID | Quantity |
 |---------|-----------|----------|
 | 101     | 1         | 1        |
@@ -152,3 +161,17 @@ MatchDetails Table
 | 104     | 5         | 1        |
 | 105     | 2         | 2        |
 | 105     | 3         | 1        |
+
+
+
+### Full Dependency Not Partial Dependent Table
+The following table shows the table fullfilling 2 NF. The primary key consists of the compbination of the StudentID and the SubjectID. The marks is fully functionally dependent on both part of the primary key. 
+
+StudentMarks
+
+| StudentID  |  SubjectID   |  Marks   |
+|------------|--------------|----------|
+| 240164     |  SoftwareDesign |  86   |
+| 240164     | Math         |  90      |
+| 240167     | SoftwareDesign | 42     |
+| 240167     | Math         |  91      |
