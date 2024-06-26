@@ -46,6 +46,7 @@ Functional Dependencies:
     - ProductID → ProductName, Price
     - 
 Partial Dependencies:
+
     - OrderID → OrderDate
     - ProductID → ProductName, Price
 
@@ -66,6 +67,7 @@ A transitive dependency occurs when one non-key attribute in a table depends on 
 | CHEM101  | Chemistry        | Prof. Green  | Chemistry        |
 
 Functional Dependency: CourseID → CourseName, LecturerName, Department
+
 Transitive Dependency: Department → LecturerName
 
 ## Database Anomaly

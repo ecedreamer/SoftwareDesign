@@ -2,16 +2,24 @@
 ## ER Diagram
 An Entity Relationship Diagram is a diagram that represents relationships among entities in a database.
 
-## Entity
+### Entity
+These are represented by rectangles and depict real-world objects or concepts that you want to store information about. For instance, in an library database, some entities could be "Book," "Author," and "Member."
 
-## Relationship
+### Attributes
+These are ovals connected to their corresponding entities and represent the specific characteristics of an entity. An "Author" entity might have attributes like "author_name" and "birth_year."
 
-### Cardinality
-Defines the numerical attributes of the relationship between two entities or entity sets. The three main cardinal relationships are one-to-one, one-to-many, and many-many. 
-- A one-to-one example would be one student associated with one mailing address. 
-- A one-to-many example (or many-to-one, depending on the relationship direction): One student registers for multiple courses, but all those courses have a single line back to that one student. 
-- Many-to-many example: Students as a group are associated with multiple faculty members, and faculty members in turn are associated with multiple students.
-  
+### Relationship & Cardinality
+**Relationship:** This refers to the general association or connection between two entities. It describes how the entities interact with each other.
+
+**Cardinality:** ThisDefines the numerical attributes of the relationship between two entities or entity sets. The three main cardinal relationships are one-to-one, one-to-many, and many-many. 
+
+**Examples:**
+    In Online Shopping system, 
+    1. Order and Delivery entity have One-to-One cardinality in relationship
+    2. Customer and Order has One-to-Many relationship
+    3. Order and Product has Many-to-Many relationship
+
+
 <img src="../../Images/entity_relationship.png" width="400">
 
 ### One to One
