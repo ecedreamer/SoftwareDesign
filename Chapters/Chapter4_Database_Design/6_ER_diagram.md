@@ -14,6 +14,7 @@ These are ovals connected to their corresponding entities and represent the spec
 **Cardinality:** ThisDefines the numerical attributes of the relationship between two entities or entity sets. The three main cardinal relationships are one-to-one, one-to-many, and many-many. 
 
 **Examples:**
+
     In Online Shopping system, 
     1. Order and Delivery entity have One-to-One cardinality in relationship
     2. Customer and Order has One-to-Many relationship

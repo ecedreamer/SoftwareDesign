@@ -1,25 +1,8 @@
+1. Design an ER diagram for University, where University, Department, Student, Course and Professors etc. are the identified entities. 
+2. Design an ER diagram for Online Shopping Website. 
+3. Design an ER diagram for messaging app. 
 
-## ER Diagram
-An Entity Relationship Diagram is a diagram that represents relationships among entities in a database.
-
-### Entity
-The building blocks of an ERD are entities, which represent real-world objects, concepts, or events that you want to store information about in your database. Examples of entities in a library management system could be Books, Authors, and Members.
-
-### Attributes
-While not directly shown in the ERD itself, entities are composed of attributes, which are essentially the specific characteristics or properties that define an entity.  For example, attributes of a Book entity might include title, author_id (foreign key referencing the Authors table), genre, and publication_date.
-
-### Relationship & Cardinality
-ERD also depicts the relationships between these entities with cardinality
-It defines the numerical attributes of the relationship between two entities or entity sets. The three main cardinal relationships are one-to-one, one-to-many, and many-many. 
-  1. A one-to-one example would be one student associated with one mailing address. 
-  2. A one-to-many example (or many-to-one, depending on the relationship direction): One student registers for multiple courses, but all those courses have a single line back to that one student.
-  3. A many-to-one example (or many-to-one, depending on the relationship direction): One student registers for multiple courses, but all those courses have a single line back to that one student. 
-  4. Many-to-many example: Students as a group are associated with multiple faculty members, and faculty members in turn are associated with multiple students.
-
-<img src="../../Images/entity_relationship.png" width="600">
-
-
-### References: 
-1. Video Tutorial: https://www.youtube.com/watch?v=HdaoufJNY_c&ab_channel=Drewity
-2. https://www.lucidchart.com/pages/er-diagrams
-3. https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/
+**Additional Question::**
+XYZ Bookstore, a popular chain of bookshops, is facing operational challenges with its current information management system. The existing system only tracks basic inventory and customer data, which is insufficient to meet the demands of the growing business. The management has recognized the need for a more comprehensive solution to streamline operations and enhance customer satisfaction. As a database designer, you have been tasked with designing an Entity-Relationship (ER) diagram for the proposed new system.
+Design an ER diagram that caters to XYZ Bookstore's requirements. Identify the necessary entities, attributes, and relationships to ensure the new system can handle more than just inventory and customer data. The system should support functions such as sales tracking, supplier information, order management, and customer loyalty programs, enabling XYZ Bookstore to efficiently manage its retail operations.
+Provide an ER diagram depicting the entities, attributes, relationships, and cardinalities required for the new system, allowing XYZ Bookstore to effectively manage its diverse retail operations beyond inventory and customer data management.
