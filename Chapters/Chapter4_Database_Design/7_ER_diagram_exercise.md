@@ -1,5 +1,24 @@
-1. Design an ER diagram for University, where University, Department, Student, Course and Professors etc. are the identified entities. 
+1. Design an ER diagram for University, where Department, Student, Course and Professors etc. are the identified entities.
+
+
+
+
+
+
+
+
 2. Design an ER diagram for Online Shopping Website. 
+
+Solution 
+
+<img src="../../Images/database/online_shopping_er_diagram.png" width="600">
+
+
+
+
+
+
+
 3. Design an ER diagram for messaging app. 
 
 **Additional Question::**
