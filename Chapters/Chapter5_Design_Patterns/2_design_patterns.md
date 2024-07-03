@@ -1,5 +1,6 @@
 # READ THIS MENDATORY 
 Click this link: https://refactoring.guru/design-patterns
+Another: https://www.oodesign.com/
 
 ## Design Patterns
 
@@ -18,21 +19,28 @@ These patterns focus on object creation without specifying the exact class or su
 1. **Singleton Pattern**: Ensures that a class has only one instance and provides a global point of access to that instance.
     
     Eg. A logging class where only one instance needs to maintain the log entries.
+    <img src="resources/singleton_class.png" width="500"/>
+
 2. **Factory Method Pattern**: Defines an interface for creating an object, but allows subclasses to alter the type of objects that will be created.
   
     Eg. A document creation application where the Factory Method can create different document types (Word, PDF) based on user selection.
+<img src="resources/factory_pattern_uml_diagram.jpg" width="800"/>
 
-3. **Abstract Factory Pattern**: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+1. **Abstract Factory Pattern**: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
   
     Eg. A UI framework where the Abstract Factory can create different UI elements (buttons, text boxes) based on the desired platform (Windows, Mac).
+    <img src="resources/abstract-factory-diagram.webp" width="800"/>
 
-4. **Builder Pattern**: Separates the object construction process from its representation.
+2. **Builder Pattern**: Separates the object construction process from its representation.
   
     Eg. Building a complex configuration object with multiple optional parameters.
 
-5. **Prototype Pattern**: Creates new objects by cloning existing ones.
+      <img src="resources/builder_pattern.png" width="800"/>
+
+3. **Prototype Pattern**: Creates new objects by cloning existing ones without dependency.
   
     Eg. Creating network connections where initial settings can be copied from a base prototype.
+    <img src="resources/prototype-pattern.jpg" width="800"/>
 
 ### Structural Patterns:
 These patterns focus on composing classes and objects to form larger structures and functionalities. They deal with how classes and objects are structured and how they collaborate.
@@ -40,6 +48,7 @@ These patterns focus on composing classes and objects to form larger structures 
 1. **Adapter Pattern**: Allows objects with incompatible interfaces to work together by providing a wrapper that converts the interface of one class into another interface.
 
     Eg. Using a card reader adapter to make an old computer compatible with newer SD cards.
+    <img src="resources/adapter-design-pattern.jpeg" width="800"/>
 
 2. **Bridge Pattern**: The Bridge Pattern decouples an abstraction from its implementation so that the two can vary independently. This allows for more flexible and maintainable code.
 
@@ -48,6 +57,7 @@ These patterns focus on composing classes and objects to form larger structures 
 3. **Facade Pattern**: Provides a simplified interface to a complex system of classes, making it easier to use
 
     Eg. An ATM interface that hides the underlying complexities of account management and transaction processing.
+    <img src="resources/facade_pattern.png" width="800"/>
 
 4. **Composite Pattern**: Treats a group of objects as a single object and allows for recursive operations.
 
@@ -71,6 +81,7 @@ These patterns focus on communication and interaction between objects. They defi
 1. **Strategy Pattern**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
     Eg. A sorting algorithm where the strategy can be chosen (bubble sort, quick sort) based on data size.
+    <img src="resources/strategy_pattern.png" width="800"/>
 
 2. **Observer Pattern**: Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
@@ -83,6 +94,7 @@ These patterns focus on communication and interaction between objects. They defi
 4. **Command Pattern**: Encapsulates a request as an object, thereby allowing parameterization of clients with queues, requests, and operations.
 
     Eg. Macro buttons in a graphics application that store and execute a sequence of commands.
+    <img src="resources/command-pattern.png" width="800"/>
 
 5. **Template Method Pattern**: EDefines the skeleton of an algorithm in an operation, deferring some steps to subclasses.
 
@@ -92,6 +104,7 @@ These patterns focus on communication and interaction between objects. They defi
 6. **State Pattern**: The State design pattern allows an object to alter its behavior when its internal state changes, making it appear as if the object changes its class. 
 
     Eg. A light switch that changes its behavior (on/off) based on its internal state.
+    <img src="resources/state-pattern.jpg" width="800"/>
 
 7. **Memento Pattern**: Captures and externalizes an object's internal state at a specific point in time. The saved state (memento) can be used to restore the object to its original state.
 
@@ -115,4 +128,13 @@ These patterns focus on communication and interaction between objects. They defi
 
 
 ## References: 
-- Read this mendatorily: https://refactoring.guru/design-patterns
+- You can see all design pattern class diagrams here 
+    
+    https://online.visual-paradigm.com/diagrams/templates/class-diagram/
+- Read this mendatorily: 
+    
+    https://refactoring.guru/design-patterns
+
+- Its also interesting series if you want to go deep
+  
+    https://www.youtube.com/watch?v=v9ejT8FO-7I&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&ab_channel=ChristopherOkhravi

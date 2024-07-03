@@ -20,7 +20,8 @@ Coupling refers to the degree of direct interdependence between software modules
 - Enhances the potential for reusability.
 
 #### Types of Coupling:
-In Least to Most Coupling Ranking
+In Least to Most degree of Coupling Ranking
+(Most to least desired coupling)
 
 **Data Coupling:**  Data coupling occurs when classes share data through parameters. This is the lowest degree of coupling and is generally preferred.
 ```python
@@ -163,6 +164,7 @@ Cohesion refers to the degree to which the elements inside a module belong toget
 
 ### Types
 In Most to Least Cohesion Ranking
+(Most to least desired cohesion)
 1. **Functional Cohesion**: Functional cohesion occurs when elements are grouped because they all contribute to a single, well-defined task. This is the strongest form of cohesion.
    ```python
    class Calculator:
