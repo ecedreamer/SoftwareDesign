@@ -20,7 +20,7 @@ Coupling refers to the degree of direct interdependence between software modules
 - Enhances the potential for reusability.
 
 #### Types of Coupling:
-In Most to Least Coupling Ranking
+In Least to Most Coupling Ranking
 
 **Data Coupling:**  Data coupling occurs when classes share data through parameters. This is the lowest degree of coupling and is generally preferred.
 ```python
