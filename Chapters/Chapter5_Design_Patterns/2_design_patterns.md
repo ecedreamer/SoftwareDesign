@@ -26,18 +26,66 @@ These patterns focus on object creation without specifying the exact class or su
     Eg. A document creation application where the Factory Method can create different document types (Word, PDF) based on user selection.
 <img src="resources/factory_pattern_uml_diagram.jpg" width="800"/>
 
-1. **Abstract Factory Pattern**: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+```python
+
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+  """Abstract class representing a shape."""
+
+  @abstractmethod
+  def draw(self) -> None:
+    pass
+
+class Square(Shape):
+  """Concrete class representing a square shape."""
+
+  def draw(self) -> None:
+    print("Drawing a square.")
+
+class Circle(Shape):
+  """Concrete class representing a circle shape."""
+
+  def draw(self) -> None:
+    print("Drawing a circle.")
+
+class ShapeFactory:
+  """Factory class for creating different shapes."""
+
+  @staticmethod
+  def create_shape(shape_type: str) -> Shape:
+    """Creates a shape object based on the provided type."""
+    if shape_type == "square":
+      return Square()
+    elif shape_type == "circle":
+      return Circle()
+    else:
+      raise ValueError(f"Invalid shape type: {shape_type}")
+
+# Usage example
+def draw_shape(shape_type: str) -> None:
+  """Function to draw a shape using the factory."""
+  shape = ShapeFactory.create_shape(shape_type)
+  shape.draw()
+
+draw_shape("square")  # Output: Drawing a square.
+draw_shape("circle")  # Output: Drawing a circle.
+# draw_shape("invalid")  # Raises ValueError
+
+```
+
+3. **Abstract Factory Pattern**: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
   
     Eg. A UI framework where the Abstract Factory can create different UI elements (buttons, text boxes) based on the desired platform (Windows, Mac).
     <img src="resources/abstract-factory-diagram.webp" width="800"/>
 
-2. **Builder Pattern**: Separates the object construction process from its representation.
+4. **Builder Pattern**: Separates the object construction process from its representation.
   
     Eg. Building a complex configuration object with multiple optional parameters.
 
       <img src="resources/builder_pattern.png" width="800"/>
 
-3. **Prototype Pattern**: Creates new objects by cloning existing ones without dependency.
+5. **Prototype Pattern**: Creates new objects by cloning existing ones without dependency.
   
     Eg. Creating network connections where initial settings can be copied from a base prototype.
     <img src="resources/prototype-pattern.jpg" width="800"/>
@@ -49,6 +97,62 @@ These patterns focus on composing classes and objects to form larger structures 
 
     Eg. Using a card reader adapter to make an old computer compatible with newer SD cards.
     <img src="resources/adapter-design-pattern.jpeg" width="800"/>
+
+```python
+from abc import ABC, abstractmethod
+
+
+class SQLDatabase:
+    """ Target System for which we are making adapter """
+    def execute_query(self, sql_query):
+        print("Executing...")
+        print(sql_query)
+        print("Finished...")
+
+
+class DatabaseInterface(ABC):  # ABC = AbstractBaseClass or Abstract Class is a class which can not be instantiated
+    """ Interface for Desired System """
+    @abstractmethod
+    def fetch_data(self, table, condition):
+        ...
+        
+    @abstractmethod
+    def insert_data(self, table, **data):
+        ...
+        
+
+class DBAdapter(DatabaseInterface):
+    """ Adapter based on Desired Interface """
+    def __init__(self, adaptee):
+        self.adaptee = adaptee
+    
+    def fetch_data(self, table, condition):
+        query = f"SELECT * FROM {table} WHERE {condition}"
+        self.adaptee.execute_query(query)
+        
+    def insert_data(self, table, **data):
+        student_name = data.get("name")
+        student_address = data.get("address")
+        query = f"INSERT INTO {table}qu(name, address) VALUES({student_name}, {student_address})"
+        self.adaptee.execute_query(query)
+
+
+def main():
+    """ Adaptor Implementation Code """
+    print("starting main")
+    adaptee = SQLDatabase()
+    adapter = DBAdapter(adaptee)
+    print("Inserting Data")
+    adapter.insert_data("Student", name="Dipak", address="Lalitpur")
+    
+    print("\nFetching Data")
+    adapter.fetch_data("Student", condition="name=Dipak")
+    
+    
+if __name__ == "__main__":
+    main()
+
+```
 
 2. **Bridge Pattern**: The Bridge Pattern decouples an abstraction from its implementation so that the two can vary independently. This allows for more flexible and maintainable code.
 
@@ -105,6 +209,58 @@ These patterns focus on communication and interaction between objects. They defi
 
     Eg. A light switch that changes its behavior (on/off) based on its internal state.
     <img src="resources/state-pattern.jpg" width="800"/>
+
+```python
+
+from abc import ABC, abstractmethod
+
+# Context class
+class LightSwitch:
+    def __init__(self):
+        self.off_state = OffState(self)
+        self.on_state = OnState(self)
+        self.state = self.off_state
+
+    def set_state(self, state):
+        self.state = state
+
+    def toggle(self):
+        self.state.toggle()
+
+# State interface
+class State(ABC):
+    def __init__(self, light_switch):
+        self.light_switch = light_switch
+
+    @abstractmethod
+    def toggle(self):
+        pass
+
+# Concrete states
+class OffState(State):
+    def toggle(self):
+        print("Switching to ON")
+        self.light_switch.set_state(self.light_switch.on_state)
+
+class OnState(State):
+    def toggle(self):
+        print("Switching to OFF")
+        self.light_switch.set_state(self.light_switch.off_state)
+
+# Client code
+def main():
+    light_switch = LightSwitch()
+    
+    # Toggle the switch a few times
+    light_switch.toggle()  # Switching to ON
+    light_switch.toggle()  # Switching to OFF
+    light_switch.toggle()  # Switching to ON
+    light_switch.toggle()  # Switching to OFF
+
+if __name__ == "__main__":
+    main()
+
+```
 
 7. **Memento Pattern**: Captures and externalizes an object's internal state at a specific point in time. The saved state (memento) can be used to restore the object to its original state.
 
