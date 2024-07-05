@@ -21,7 +21,7 @@ These patterns focus on object creation without specifying the exact class or su
     Eg. A logging class where only one instance needs to maintain the log entries.
     <img src="resources/singleton_class.png" width="500"/>
 
-2. **Factory Method Pattern**: Defines an interface for creating an object, but allows subclasses to alter the type of objects that will be created.
+2. **Factory Pattern**: Defines an interface for creating an object, but allows subclasses to alter the type of objects that will be created.
   
     Eg. A document creation application where the Factory Method can create different document types (Word, PDF) based on user selection.
 <img src="resources/factory_pattern_uml_diagram.jpg" width="800"/>
@@ -98,6 +98,12 @@ These patterns focus on composing classes and objects to form larger structures 
     Eg. Using a card reader adapter to make an old computer compatible with newer SD cards.
     <img src="resources/adapter-design-pattern.jpeg" width="800"/>
 
+
+In the above diagram, 
+- SQLDatabase is adaptee
+- DatabaseInterface is Target
+- DBAdapter is Adapter
+  
 ```python
 from abc import ABC, abstractmethod
 
@@ -154,28 +160,28 @@ if __name__ == "__main__":
 
 ```
 
-2. **Bridge Pattern**: The Bridge Pattern decouples an abstraction from its implementation so that the two can vary independently. This allows for more flexible and maintainable code.
+1. **Bridge Pattern**: The Bridge Pattern decouples an abstraction from its implementation so that the two can vary independently. This allows for more flexible and maintainable code.
 
     Eg.  Separate game rendering logic (abstraction) from graphics API (implementation) for platform-independent game development.
 
-3. **Facade Pattern**: Provides a simplified interface to a complex system of classes, making it easier to use
+2. **Facade Pattern**: Provides a simplified interface to a complex system of classes, making it easier to use
 
     Eg. An ATM interface that hides the underlying complexities of account management and transaction processing.
     <img src="resources/facade_pattern.png" width="800"/>
 
-4. **Composite Pattern**: Treats a group of objects as a single object and allows for recursive operations.
+3. **Composite Pattern**: Treats a group of objects as a single object and allows for recursive operations.
 
     Eg. A file system where folders and files can be treated similarly for operations like copying or deleting.
 
-5. **Decorator Pattern**: Allows behavior to be added to individual objects dynamically, without affecting the behavior of other objects from the same class.
+4. **Decorator Pattern**: Allows behavior to be added to individual objects dynamically, without affecting the behavior of other objects from the same class.
 
     Eg. Decorating a text editor with features like spell checking or grammar suggestions.
  
-6. **Proxy Pattern**: A security proxy that checks user permissions before allowing access to a resource.
+5. **Proxy Pattern**: A security proxy that checks user permissions before allowing access to a resource.
 
     Eg. A security proxy that checks user permissions before allowing access to a resource.
 
-7. **Flyweight Pattern**: Makes efficient use of memory by sharing similar objects.
+6. **Flyweight Pattern**: Makes efficient use of memory by sharing similar objects.
 
     Eg. Reusing character icons in a word processing application instead of creating a new object for each instance.
 
