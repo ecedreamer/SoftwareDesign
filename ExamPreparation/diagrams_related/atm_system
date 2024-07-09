@@ -1,0 +1,18 @@
+Draw a use-case diagram for ATM machine for money withdrawl.
+=====> 
+Actors:
+- Bank User
+- Bank System
+
+
+Use cases:
+- Authentication
+- Balance Inquiry
+- Withdrawl
+- Print Receipt
+- Raise Error
+
+Relationships:
+- Check balance requirs Authentication
+- Authentication must be provided by the bank system
+  ... etc.

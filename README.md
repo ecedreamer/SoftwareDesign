@@ -2,8 +2,8 @@
 
 ### Phase Test 1
 
-Full marks: 65
-Pass mark: 26
+Full marks: 60
+Pass mark: 24
 Time: 1 Hour 15 minues
 
 #### Section A
@@ -12,7 +12,7 @@ Time: 1 Hour 15 minues
 
 #### Section B
 
-    3 tasks - 5 marks each
+    2 tasks - 5 marks each
 
     Class Diagram/ER diagram/Flow chart/User stories & Acceptance Criterias/Use-Case diagrams/Normalization
 
