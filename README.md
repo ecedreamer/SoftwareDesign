@@ -1,6 +1,6 @@
 ## Software Design
 
-### Phase Test 1
+### Part 1: Phase Test
 
 Full marks: 60
 Pass mark: 24
@@ -16,7 +16,7 @@ Time: 1 Hour 15 minues
 
     Class Diagram/ER diagram/Flow chart/User stories & Acceptance Criterias/Use-Case diagrams/Normalization
 
-### Phase Test 2
+### Part 2: Examination
 
 Full marks: 40
 Pass marks: 16
@@ -29,4 +29,5 @@ Time: 1 hour
 #### Section B
 
     4 questions/tasks - 5 marks each
+    
     Class Diagram/ER diagram/Flow chart/User stories & Acceptance Criterias/Use-Case diagrams/Normalization/Design Patterns
