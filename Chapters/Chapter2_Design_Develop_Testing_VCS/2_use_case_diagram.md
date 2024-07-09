@@ -1,7 +1,11 @@
 ## UML Use Case Diagram
 A use case diagram is used to represent the dynamic behavior of a system. It encapsulates the system's functionality by incorporating use cases, actors, and their relationships. It models the tasks, services, and functions required by a system/subsystem of an application. It depicts the high-level functionality of a system and also tells how the user handles a system.
 
-## Purpose of Use Case Diagrams
+### Components of Use Case Diagram
+<img src="resources/use-case-component.jpg" width="800">
+
+
+### Purpose of Use Case Diagrams
 The main purpose of a use case diagram is to portray the dynamic aspect of a system. It accumulates the system's requirement, which includes both internal as well as external influences. It invokes persons, use cases, and several things that invoke the actors and elements accountable for the implementation of use case diagrams. It represents how an entity from the external environment can interact with a part of the system.
 
 Following are the purposes of a use case diagram given below:
@@ -11,7 +15,7 @@ Following are the purposes of a use case diagram given below:
 - It recognizes the internal as well as external factors that influence the system.
 - It represents the interaction between the actors.
 
-## How to draw a Use Case diagram?
+### How to draw a Use Case diagram?
 It is essential to analyze the whole system before starting with drawing a use case diagram, and then the system's functionalities are found. And once every single functionality is identified, they are then transformed into the use cases to be used in the use case diagram.
 
 After that, we will enlist the actors that will interact with the system. The actors are the person or a thing that invokes the functionality of a system. It may be a system or a private entity, such that it requires an entity to be pertinent to the functionalities of the system to which it is going to interact.
@@ -25,7 +29,7 @@ Following are some rules that must be followed while drawing a use case diagram:
 - Specified notations to be used as and when required.
 - The most significant interactions should be represented among the multiple no of interactions between the use case and actors.
 
-## Example of a Use Case Diagram
+### Example of a Use Case Diagram
 A use case diagram depicting the Online Shopping website is given below.
 
 Here the Web Customer actor makes use of any online shopping website to purchase online. The top-level uses are as follows; View Items, Make Purchase, Checkout, Client Register. The View Items use case is utilized by the customer who searches and view products. The Client Register use case allows the customer to register itself with the website for availing gift vouchers, coupons, or getting a private sale invitation. It is to be noted that the Checkout is an included use case, which is part of Making Purchase, and it is not available by itself.
