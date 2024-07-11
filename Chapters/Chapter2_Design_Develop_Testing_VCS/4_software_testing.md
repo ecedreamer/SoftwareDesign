@@ -30,6 +30,9 @@ Software testing is a critical process in the software development lifecycle (SD
 
 **Examples:** End-to-end testing, penetration testing, and regression testing with a focus on understanding how changes in the code affect the system.
 
+### Green Box = Release testing
+### Yellow Box = Acceptance testing
+
 ## Based on Purpose
 
 ### Functional Testing: 
