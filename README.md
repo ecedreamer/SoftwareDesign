@@ -31,3 +31,9 @@ Time: 1 hour
     4 questions/tasks - 5 marks each
     
     Class Diagram/ER diagram/Flow chart/User stories & Acceptance Criterias/Use-Case diagrams/Normalization/Design Patterns
+
+
+
+
+
+samp
