@@ -10,6 +10,7 @@ Order Table
 
 2. Normalize the table in 2nf.
 OrderedProduct Table
+
 | OrderID | ProductID | OrderDate   | ProductName   | Price  |
 |---------|-----------|-------------|---------------|--------|
 | 1       | 101       | 2024-06-01  | Widget A      | 5000   |
@@ -22,6 +23,7 @@ OrderedProduct Table
 
 3. Normalize the table below in 1nf, 2nf and 3nf if necessary.
 OrderDetail Table
+
 | Order Number | Customer Name | Customer Address | Item   | Quantity | Price | Total |
 |--------------|---------------|------------------|--------|----------|-------|-------|
 | 101          | John Smith    | 123 Main St.     | Apple  | 2        | 1.00  | 2.00  |
