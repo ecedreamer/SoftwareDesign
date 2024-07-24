@@ -39,7 +39,7 @@ Select all the apply.
     - a.	A relationship between two entities or tables in a database.
     - b.	A relationship between an attribute and a table in a database.
     - c.	A relationship between two attributes in a table.
-    - d.	A relationship between three entities or tables in a database
+    - d.	None of the above
 
 8. SQL stands for
     - a. Statement Qestion Language
